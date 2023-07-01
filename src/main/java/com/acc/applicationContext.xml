@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="bank" class="com.acc.Bank">
+        <property name="bankName" value="hdfc"></property>
+        <property name="bankBranch" value="Varthur"></property>
+        <property name="ifscCode" value="HDFC000567"></property>
+    </bean>
+
+    <bean id="account" class="com.acc.Account">
+        <property name="accountId" value="100056784765"></property>
+        <property name="accountName" value="Ayyappa"></property>
+        <property name="bankDetails" ref="bank"></property>
+    </bean>
+
+</beans>
