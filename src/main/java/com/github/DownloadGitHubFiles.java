@@ -22,6 +22,8 @@ public class DownloadGitHubFiles {
             file = new File("D:/DataFiles/Downloaded/" + fileName);
         } else if (CommonUtils.isLinux()) {
             file = new File("D:/DataFiles/Downloaded/" + fileName);
+        }else if(CommonUtils.isMac()){
+            file = new File("/Users/hariduddukunta/MyWork/DataFiles/" + fileName);
         }
         DownloadGitHubFiles.copyURLToFile(url, file);
     }

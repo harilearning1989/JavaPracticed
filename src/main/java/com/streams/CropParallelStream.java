@@ -35,23 +35,6 @@ public class CropParallelStream {
         //findMaxClaimRow(cropList);
         //findMinClaimRow(cropList);
 
-        //groupByMandals(cropList);
-        //groupByMandalStats(cropList);
-        //groupBySumOfClaims(cropList);
-        //groupByMinClaimOfEachMandal(cropList);
-        //groupByMaxClaimOfEachMandal(cropList);
-        //groupByAvgClaimOfEachMandal(cropList);
-        //groupByCountClaimOfEachMandal(cropList);
-        //groupByMadalMax10Claims(cropList);
-        //groupByMadalMin10Claims(cropList);
-        //groupByMadalMaxDist10Claims(cropList);
-        //groupByMadalMinDist10Claims(cropList);
-        //groupByMandalClaimBetween(cropList);
-        //groupByMandalClaimBetweenDetail(cropList);
-        //groupByMandalClaimGreaterThan(cropList);
-        //17 21
-        groupByVillCount(cropList);
-
         //getDistinctMandals(cropList);
         //getVillageAndName(cropList);
         //getAllCropsMoreThanLakh(cropList);
@@ -63,148 +46,6 @@ public class CropParallelStream {
         //filterAndSortNullsLast(cropList);
     }
 
-    private static void groupByVillCount(List<CropInsuranceDTO> cropList) {
-        Map<String, Long> groupByVillCounting = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getVillageName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getVillageName, counting()));
-        groupByVillCounting.forEach((k, v) -> System.out.println(k + "====" + v));
-    }
-
-    private static void groupByMandalClaimGreaterThan(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> groupByTop10 =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.parallelStream()
-                                        .sorted(comparing(CropInsuranceDTO::getClaimAmountRs).reversed())
-                                        .filter(f -> f.getClaimAmountRs() >= 50000)
-                                        .collect(toList()))));
-        groupByTop10.forEach((k, v) -> {
-            System.out.println("Key is===" + k);
-            v.forEach(f -> System.out.println(f.getClaimAmountRs()));
-        });
-    }
-
-    private static void groupByMandalClaimBetweenDetail(List<CropInsuranceDTO> cropList) {
-        Map<String, List<VillageAndName>> claimBetweenDetail =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .filter(f -> f.getClaimAmountRs() >= 80000 && f.getClaimAmountRs() <= 100000)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.stream()
-                                        .map(m -> {
-                                            VillageAndName vill = new VillageAndName();
-                                            vill.setClaim(m.getClaimAmountRs());
-                                            vill.setName(m.getNameOfTheBeneficiary());
-                                            vill.setVillage(m.getVillageName());
-                                            return vill;
-                                        })
-                                        .sorted(comparing(VillageAndName::getClaim).reversed())
-                                        .collect(toList()))));
-        claimBetweenDetail.forEach((k, v) -> {
-            System.out.println("Mandal is ==" + k);
-            v.forEach(f -> {
-                System.out.println(f.getClaim());
-            });
-        });
-    }
-
-    private static void groupByMandalClaimBetween(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> claimBetween = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getClaimAmountRs() >= 80000 && f.getClaimAmountRs() <= 100000)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName, toList()));
-        claimBetween.forEach((k, v) -> {
-            System.out.println("===Mandal==" + k);
-            v.forEach(f -> System.out.println(f.getClaimAmountRs()));
-        });
-    }
-
-    private static void groupByMadalMinDist10Claims(List<CropInsuranceDTO> cropList) {
-        Map<String, List<Double>> groupByTop10 =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.stream()
-                                        .map(CropInsuranceDTO::getClaimAmountRs)
-                                        .sorted()
-                                        .distinct()
-                                        .limit(10)
-                                        .collect(toList()))));
-        groupByTop10.forEach((k, v) -> {
-            System.out.println("Key is===" + k);
-            v.forEach(f -> System.out.println(f));
-        });
-    }
-
-    private static void groupByMadalMaxDist10Claims(List<CropInsuranceDTO> cropList) {
-        Map<String, List<Double>> groupByTop10 =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.stream()
-                                        .map(CropInsuranceDTO::getClaimAmountRs)
-                                        .sorted(reverseOrder())
-                                        .distinct()
-                                        .limit(10)
-                                        .collect(toList()))));
-        groupByTop10.forEach((k, v) -> {
-            System.out.println("Key is===" + k);
-            v.forEach(f -> System.out.println(f));
-        });
-    }
-
-    private static void groupByMadalMin10Claims(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> groupByTop10 =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.stream()
-                                        .sorted(comparing(CropInsuranceDTO::getClaimAmountRs))
-                                        .limit(10).collect(toList()))));
-        groupByTop10.forEach((k, v) -> {
-            System.out.println("Key is===" + k);
-            v.forEach(f -> System.out.println(f.getClaimAmountRs()));
-        });
-    }
-
-    private static void groupByMadalMax10Claims(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> groupByTop10 =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                                collectingAndThen(toList(), l -> l.stream()
-                                        .sorted(comparing(CropInsuranceDTO::getClaimAmountRs).reversed())
-                                        .limit(10).collect(toList()))));
-        groupByTop10.forEach((k, v) -> {
-            System.out.println("Key is===" + k);
-            v.forEach(f -> System.out.println(f.getClaimAmountRs()));
-        });
-    }
-
     private static void filterAndSortNullsLast(List<CropInsuranceDTO> cropList) {
         List<CropInsuranceDTO> cropData = Optional.ofNullable(cropList)
                 .orElseGet(Collections::emptyList)
@@ -212,7 +53,7 @@ public class CropParallelStream {
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
                 .sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary, nullsLast(String::compareToIgnoreCase)))
-                .collect(toList());
+                .toList();
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
 
@@ -223,7 +64,8 @@ public class CropParallelStream {
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
                 .sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary, String::compareToIgnoreCase))
-                .collect(toList());
+                .toList();
+        //.collect(toList());
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
 
@@ -234,7 +76,7 @@ public class CropParallelStream {
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
                 .sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary).reversed())
-                .collect(toList());
+                .toList();
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
 
@@ -245,7 +87,7 @@ public class CropParallelStream {
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
                 .sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary))
-                .collect(toList());
+                .toList();
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
 
@@ -265,7 +107,7 @@ public class CropParallelStream {
                 .parallelStream()
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
-                .collect(toList());
+                .toList();
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
 
@@ -281,7 +123,7 @@ public class CropParallelStream {
                     vill.setVillage(m.getVillageName());
                     return vill;
                 })
-                .collect(toList());
+                .toList();
         villName.forEach(f -> {
             System.out.println("Vill Name===" + f.getVillage() + "===Beneficiary Name===" + f.getName());
         });
@@ -295,70 +137,8 @@ public class CropParallelStream {
                 .map(CropInsuranceDTO::getMandalName)
                 .filter(Objects::nonNull)
                 .distinct()
-                .collect(toList());
+                .toList();
         mandals.forEach(System.out::println);
-    }
-
-    private static void groupByCountClaimOfEachMandal(List<CropInsuranceDTO> cropList) {
-        Map<String, Long> claimCountByMandal = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .stream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName, counting()));
-        claimCountByMandal.forEach((k, v) -> {
-            System.out.println(k + "====" + v);
-        });
-    }
-
-    private static void groupByAvgClaimOfEachMandal(List<CropInsuranceDTO> cropList) {
-        Map<String, Double> avgClaimByMandal = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .stream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName, averagingDouble(CropInsuranceDTO::getClaimAmountRs)));
-        avgClaimByMandal.forEach((k, v) -> {
-            System.out.println(k + "====" + v);
-        });
-    }
-
-    private static void groupByMaxClaimOfEachMandal(List<CropInsuranceDTO> cropList) {
-        Map<String, Optional<CropInsuranceDTO>> maxClaimByMandal = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                        maxBy(comparingDouble(CropInsuranceDTO::getClaimAmountRs))));
-        maxClaimByMandal.forEach((k, v) -> {
-            System.out.println(k + "====" + v.get().getClaimAmountRs());
-        });
-    }
-
-    private static void groupByMinClaimOfEachMandal(List<CropInsuranceDTO> cropList) {
-        Map<String, Optional<CropInsuranceDTO>> minClaimByMandal = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                        minBy(comparingDouble(CropInsuranceDTO::getClaimAmountRs))));
-        minClaimByMandal.forEach((k, v) -> {
-            System.out.println(k + "====" + v.get().getClaimAmountRs());
-        });
-    }
-
-    private static void groupBySumOfClaims(List<CropInsuranceDTO> cropList) {
-        Map<String, Double> sumOfDept = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName, summingDouble(CropInsuranceDTO::getClaimAmountRs)));
-        sumOfDept.forEach((k, v) -> {
-            System.out.println(k + "====" + v);
-        });
     }
 
     private static void findMinClaimRow(List<CropInsuranceDTO> cropList) {
@@ -379,33 +159,6 @@ public class CropParallelStream {
                 .max(comparing(CropInsuranceDTO::getClaimAmountRs))
                 .orElseThrow(NoSuchElementException::new);
         System.out.println("Maximum CropInsuranceDTO :==" + maxClaim);
-    }
-
-    private static void groupByMandalStats(List<CropInsuranceDTO> cropList) {
-        Map<String, DoubleSummaryStatistics> byMandalStats = Optional.ofNullable(cropList)
-                .orElseGet(Collections::emptyList)
-                .parallelStream()
-                .filter(Objects::nonNull)
-                .filter(f -> f.getMandalName() != null)
-                .collect(groupingBy(CropInsuranceDTO::getMandalName,
-                        summarizingDouble(CropInsuranceDTO::getClaimAmountRs)));
-        byMandalStats.forEach((k, v) -> {
-            System.out.println(k + "===" + v.getMax() + "==min==" + v.getMin());
-        });
-    }
-
-    private static void groupByMandals(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> byMandal =
-                Optional.ofNullable(cropList)
-                        .orElseGet(Collections::emptyList)
-                        .parallelStream()
-                        .filter(Objects::nonNull)
-                        .filter(f -> f.getMandalName() != null)
-                        .collect(groupingBy(CropInsuranceDTO::getMandalName, toList()));
-
-        byMandal.forEach((k, v) -> {
-            System.out.println(k + "===" + v.size());
-        });
     }
 
     private static void claimSummaryStats(List<CropInsuranceDTO> cropList) {

@@ -7,7 +7,9 @@ import com.opencsv.bean.CsvToBeanBuilder;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamMethodsExamples {
     //https://stackify.com/streams-guide-java-8/
@@ -17,20 +19,52 @@ public class StreamMethodsExamples {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        String cropFileLocation = "D:/DataFiles/Downloaded/csv/crop_insurance.csv";
+        String cropFileLocation = "/Users/hariduddukunta/MyWork/DataFiles/csv/crop_insurance.csv";
         List<CropInsuranceDTO> cropList = getCropDetails(cropFileLocation);
         System.out.println("Size of the crop===" + cropList.size());
-        streamMethodsExamples(cropList);
+
+        ArrayList<String> list = new ArrayList<>();
+        list.add("One");
+        list.add("OneAndOnly");
+        list.add("Derek");
+        list.add("Change");
+        list.add("factory");
+        list.add("justBefore");
+        list.add("Italy");
+        list.add("Italy");
+        list.add("Thursday");
+        list.add("");
+        list.add("");
+        streamMethodsExamples(cropList,list);
     }
 
-    private static void streamMethodsExamples(List<CropInsuranceDTO> cropList) {
+    private static void streamMethodsExamples(
+            List<CropInsuranceDTO> cropList,
+            ArrayList<String> list) {
         cropList.add(null);
         //getDistinctMandals(cropList);
         //getAllFormersNames(cropList);
         //getTheMandalWiseFormerCount(cropList);
         //getTheMaxInsurance(cropList);
         //getDistinctBranches(cropList);
-        getVillAndFormerName(cropList);
+        //getVillAndFormerName(cropList);
+        
+        //allMatch,anyMatch,builder,collect,concat,count,distinct,empty,filter,findAny,findFirst,flatMap,
+        //flatMapToDouble,flatMapToInt,flatMapToLong,forEach,forEachOrdered,generate,iterate,limit,map,mapToDouble,
+        //mapToInt,mapToLong,max,min,noneMatch,of,peek,reduce,skip,sorted,toArray
+        
+        allMatchExample(cropList);
+
+        boolean isValid = list.stream().anyMatch(element -> element.contains("h")); // true
+        boolean isValidOne = list.stream().allMatch(element -> element.contains("h")); // false
+        boolean isValidTwo = list.stream().noneMatch(element -> element.contains("h"));
+    }
+
+    private static void allMatchExample(List<CropInsuranceDTO> cropList) {
+        Stream<String> stream = Stream.of("one", "two", "three", "fou1r");
+        Predicate<String> containsDigit = s -> s.contains("\\d+") == false;
+        boolean match = stream.allMatch(containsDigit);
+        System.out.println(match);
     }
 
     private static void getVillAndFormerName(List<CropInsuranceDTO> cropList) {

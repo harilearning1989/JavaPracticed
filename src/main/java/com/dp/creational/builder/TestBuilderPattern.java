@@ -1,5 +1,7 @@
 package com.dp.creational.builder;
 
+import java.util.stream.IntStream;
+
 public class TestBuilderPattern {
 
     public static void main(String[] args) {
@@ -10,5 +12,11 @@ public class TestBuilderPattern {
                 .setGraphicsCardEnabled(true).build();
 
         System.out.println(comp);
+
+        /*IntStream.iterate(0, i -> i + 100)
+                .limit(1000 / 100)
+                .forEach(i -> { *//* the test *//* });*/
+
+        IntStream.range(1,10).forEach(f -> System.out.println(f));
     }
 }

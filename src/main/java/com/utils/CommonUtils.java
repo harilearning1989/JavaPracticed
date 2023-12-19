@@ -18,6 +18,10 @@ public interface CommonUtils {
         return getOsName().startsWith("Linux");
     }
 
+    static boolean isMac(){
+        return getOsName().startsWith("Mac");
+    }
+
     public static String readResource(final String fileName, Charset charset) throws IOException {
         return Resources.toString(Resources.getResource(fileName), charset);
     }
