@@ -162,6 +162,7 @@ public class EmployeeStreamExample {
                 .stream()
                 .filter(Objects::nonNull)
                 .collect(groupingBy(Employee::getDepartment, averagingDouble(Employee::getSalary)));
+        //.collect(groupingBy(Employee::getDepartment,LinkedHashMap::new, averagingDouble(Employee::getSalary)));
         avgSalaryOfDepartments.forEach((k, v) -> {
             System.out.println(k + "====" + v);
         });

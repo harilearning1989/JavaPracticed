@@ -1,4 +1,4 @@
-package com.test;
+package com.rank;
 
 public class Dog extends Animal{
     @Override

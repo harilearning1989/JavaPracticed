@@ -1,4 +1,4 @@
-package com.test;
+package com.rank;
 
 public class GoldernRetriver extends Dog{
 

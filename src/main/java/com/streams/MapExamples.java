@@ -2,7 +2,6 @@ package com.streams;
 
 import com.github.DownloadGitHubFiles;
 import com.github.dto.CropInsuranceDTO;
-import com.opencsv.bean.CsvToBeanBuilder;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -17,15 +16,15 @@ import static java.util.stream.Collectors.toList;
 public class MapExamples {
 
     public static void main(String[] args) {
-        try {
+       /* try {
             DownloadGitHubFiles.downloadFile("csv/crop_insurance.csv");
         } catch (Exception e) {
             e.printStackTrace();
         }
-        String cropFileLocation = "D:/DataFiles/Downloaded/csv/crop_insurance.csv";
-        List<CropInsuranceDTO> cropList = getCropDetails(cropFileLocation);
+        String cropFileLocation = "D:/DataFiles/Downloaded/csv/crop_insurance.csv";*/
+        /*List<CropInsuranceDTO> cropList = getCropDetails(cropFileLocation);
         cropList.add(null);
-        cropList.add(new CropInsuranceDTO());
+        cropList.add(new CropInsuranceDTO());*/
 
         //groupByMandals(cropList);
         //groupByMandalStats(cropList);
@@ -43,8 +42,8 @@ public class MapExamples {
         //groupByMandalClaimGreaterThan(cropList);
         //17 21
         //groupByVillCount(cropList);
-        sortMapValues();
-        sortMapValuesReverseOrder();
+        //sortMapValues();
+        //sortMapValuesReverseOrder();
         getKeyOrValuesFromMap();
     }
 
@@ -63,6 +62,12 @@ public class MapExamples {
                         .stream()
                         .map(Map.Entry::getKey)
                         .toList();
+        Set<String> keys = map.keySet();
+        List<Integer> values = new ArrayList<>(map.values());
+        System.out.println(keys);
+        System.out.println(values);
+        int max = map.values().stream().max(Comparator.naturalOrder()).get();
+        System.out.println("Max Value::"+max);
     }
 
     private static void sortMapValuesReverseOrder() {
@@ -308,7 +313,7 @@ public class MapExamples {
         });
     }
 
-    private static List<CropInsuranceDTO> getCropDetails(String fileLocation) {
+    /*private static List<CropInsuranceDTO> getCropDetails(String fileLocation) {
         List<CropInsuranceDTO> listCrop = null;
         try {
             listCrop = new CsvToBeanBuilder(new FileReader(fileLocation))
@@ -319,5 +324,5 @@ public class MapExamples {
             e.printStackTrace();
         }
         return listCrop;
-    }
+    }*/
 }

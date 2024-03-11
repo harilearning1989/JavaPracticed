@@ -17,7 +17,7 @@ import static java.util.Comparator.nullsLast;
 public class StreamsDemos {
 
     public static void main(String[] args) {
-        try {
+        /*try {
             optionalExamples();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -28,6 +28,24 @@ public class StreamsDemos {
         List<Integer> list = Arrays.asList(5, 3, 4, 1, 3, 7, 2, 9, 9, 4);
         Set<Integer> result = findDuplicateBySetAdd(list);
         result.forEach(System.out::println);
+*/
+        Integer[] array = {11, 14, 17, 11, 48, 33, 29, 11, 17, 22, 11, 48, 18};
+        Arrays.stream(array).collect(Collectors.groupingBy(p -> p, Collectors.counting()))
+                .entrySet().stream().filter(t -> t.getValue() > 1)
+                .forEach(key -> System.out.println(key.getKey() + ": " + key.getValue()));
+    }
+
+    public <K, V extends Comparable<V>> V maxUsingStreamAndLambda(Map<K, V> map) {
+        Optional<Map.Entry<K, V>> maxEntry = map.entrySet()
+                .stream()
+                .max(Map.Entry.comparingByValue()
+                );
+        Map.Entry<K, V> mapOpt = maxEntry.get();
+        System.out.println("Map Key::"+mapOpt.getKey()+"===Map Value::"+mapOpt.getValue());
+
+        //int maxInt = map.values().stream().max(Comparator.naturalOrder()).get();
+
+        return maxEntry.get().getValue();
     }
 
     private static void intSummaryStatistics() {

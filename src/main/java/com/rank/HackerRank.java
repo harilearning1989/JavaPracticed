@@ -1,4 +1,4 @@
-package com.test;
+package com.rank;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -1,4 +1,4 @@
-package com.test;
+package com.rank;
 
 @FunctionalInterface
 public interface FunctionalExample {

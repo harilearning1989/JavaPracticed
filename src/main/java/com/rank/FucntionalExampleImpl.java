@@ -1,11 +1,5 @@
-package com.test;
+package com.rank;
 
-
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Calendar;
-import java.util.Collections;
-import java.util.List;
 
 public class FucntionalExampleImpl implements FunctionalExample{
 

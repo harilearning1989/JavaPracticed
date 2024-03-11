@@ -35,7 +35,7 @@ public class StreamMethodsExamples {
         list.add("Thursday");
         list.add("");
         list.add("");
-        streamMethodsExamples(cropList,list);
+        streamMethodsExamples(cropList, list);
     }
 
     private static void streamMethodsExamples(
@@ -48,11 +48,11 @@ public class StreamMethodsExamples {
         //getTheMaxInsurance(cropList);
         //getDistinctBranches(cropList);
         //getVillAndFormerName(cropList);
-        
+
         //allMatch,anyMatch,builder,collect,concat,count,distinct,empty,filter,findAny,findFirst,flatMap,
         //flatMapToDouble,flatMapToInt,flatMapToLong,forEach,forEachOrdered,generate,iterate,limit,map,mapToDouble,
         //mapToInt,mapToLong,max,min,noneMatch,of,peek,reduce,skip,sorted,toArray
-        
+
         allMatchExample(cropList);
 
         boolean isValid = list.stream().anyMatch(element -> element.contains("h")); // true
@@ -80,7 +80,7 @@ public class StreamMethodsExamples {
                     }
                 })
                 .map(StreamMethodsExamples::getVillFormer)
-                .collect(Collectors.toList());
+                .toList();
         System.out.println(formerList.size());
     }
 
@@ -111,13 +111,13 @@ public class StreamMethodsExamples {
                         .stream()
                         .filter(Objects::nonNull)
                         .collect(Collectors.summarizingDouble(CropInsuranceDTO::getClaimAmountRs));
-        System.out.println(amountStats.getMax() + "===Min==" + amountStats.getMin() + "===AVG===" + amountStats.getAverage() + "==Total==" + amountStats.getSum());
+        System.out.println(amountStats.getMax() + "===Min==" + amountStats.getMin() +
+                "===AVG===" + amountStats.getAverage() + "==Total==" + amountStats.getSum());
     }
 
     private static void getTheMandalWiseFormerCount(List<CropInsuranceDTO> cropList) {
-        Map<String, List<CropInsuranceDTO>> mandalName = new HashMap<>();
-
-        mandalName = Optional.ofNullable(cropList)
+        Map<String, List<CropInsuranceDTO>> mandalName =
+                Optional.ofNullable(cropList)
                 .orElseGet(Collections::emptyList)
                 .stream()
                 .filter(Objects::nonNull)

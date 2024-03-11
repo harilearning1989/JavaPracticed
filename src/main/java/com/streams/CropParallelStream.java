@@ -76,6 +76,7 @@ public class CropParallelStream {
                 .filter(Objects::nonNull)
                 .filter(f -> f.getClaimAmountRs() >= 100000)
                 .sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary).reversed())
+                //.sorted(comparing(CropInsuranceDTO::getNameOfTheBeneficiary,nullsLast(String::compareToIgnoreCase)).reversed())
                 .toList();
         cropData.forEach(f -> System.out.println(f.getNameOfTheBeneficiary()));
     }
@@ -146,7 +147,7 @@ public class CropParallelStream {
                 .orElseGet(Collections::emptyList)
                 .parallelStream()
                 .filter(Objects::nonNull)
-                .max(comparing(CropInsuranceDTO::getClaimAmountRs))
+                .min(comparing(CropInsuranceDTO::getClaimAmountRs))
                 .orElseThrow(NoSuchElementException::new);
         System.out.println("Maximum CropInsuranceDTO :==" + minClaim);
     }

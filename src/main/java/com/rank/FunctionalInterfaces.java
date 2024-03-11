@@ -1,7 +1,4 @@
-package com.test;
-
-import java.util.function.Function;
-import java.util.function.Predicate;
+package com.rank;
 
 public class FunctionalInterfaces {
 

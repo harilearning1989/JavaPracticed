@@ -1,0 +1,42 @@
+[
+  {
+    "patientId": "1",
+    "firstName": "John",
+    "lastName": "Doe",
+    "dateOfBirth": "1980-01-01",
+    "gender": "Male",
+    "address": {
+      "street": "123 Main St",
+      "city": "Anytown",
+      "state": "OH",
+      "zip": "12345"
+    },
+    "phone": "555-555-5555",
+    "email": "johndoe@example.com",
+    "emergencyContact": {
+      "name": "Jane Doe",
+      "relationship": "Spouse",
+      "phone": "555-555-5556"
+    }
+  },
+  {
+    "patientId": "100",
+    "firstName": "Ian",
+    "lastName": "Patel",
+    "dateOfBirth": "1988-07-17",
+    "gender": "Male",
+    "address": {
+      "street": "789 Willow St",
+      "city": "Willowtown",
+      "state": "CA",
+      "zip": "56789"
+    },
+    "phone": "555-555-5664",
+    "email": "ianpatel@example.com",
+    "emergencyContact": {
+      "name": "Priya Patel",
+      "relationship": "Spouse",
+      "phone": "555-555-5665"
+    }
+  }
+]
