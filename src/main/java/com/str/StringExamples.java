@@ -7,6 +7,21 @@ public class StringExamples {
         //stringReverseDemo();
         //mergeArrays();
         //abcd
+        switchExample();
+
+    }
+
+    private static void switchExample() {
+        String department = "Admin";
+
+        String value = switch(department) {
+            case "Admin" -> "Admin Role";
+            case "Employee" -> "Employee Role";
+            default -> "No Date";
+        };
+        System.out.println("Value is "+value);
+        System.out.printf("Value is %s%n", value);
+
     }
 
     private static void mergeArrays() {
