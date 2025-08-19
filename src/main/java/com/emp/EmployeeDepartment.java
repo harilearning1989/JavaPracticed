@@ -30,6 +30,7 @@ public class EmployeeDepartment {
                 .collect(Collectors.groupingBy(EmployeeRecord::departmentName,
                         Collectors.collectingAndThen(Collectors.toList(),
                                 list -> list.stream()
+                                        .filter(f -> "TN".equalsIgnoreCase(f.state()))
                                         .sorted(Comparator.comparingDouble(EmployeeRecord::salary).reversed())
                                         .limit(5)
                                         .toList())));

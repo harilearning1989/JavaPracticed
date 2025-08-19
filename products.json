@@ -1,0 +1,2164 @@
+{
+  "mobileShops": [
+    {
+      "shopId": 1,
+      "shopName": "Mobile Shop 1",
+      "products": [
+        {
+          "productId": 1,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 13,
+          "price": 734
+        },
+        {
+          "productId": 2,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 7,
+          "price": 483
+        },
+        {
+          "productId": 3,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 15,
+          "price": 1270
+        },
+        {
+          "productId": 4,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 14,
+          "price": 760
+        },
+        {
+          "productId": 5,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 14,
+          "price": 1336
+        },
+        {
+          "productId": 6,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 7,
+          "price": 1241
+        },
+        {
+          "productId": 7,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 8,
+          "price": 524
+        },
+        {
+          "productId": 8,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 5,
+          "price": 510
+        },
+        {
+          "productId": 9,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 12,
+          "price": 1495
+        },
+        {
+          "productId": 10,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 10,
+          "price": 1264
+        },
+        {
+          "productId": 11,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 6,
+          "price": 896
+        },
+        {
+          "productId": 12,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 15,
+          "price": 1364
+        },
+        {
+          "productId": 13,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 15,
+          "price": 1246
+        },
+        {
+          "productId": 14,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 15,
+          "price": 1310
+        },
+        {
+          "productId": 15,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 15,
+          "price": 1487
+        },
+        {
+          "productId": 16,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 6,
+          "price": 709
+        },
+        {
+          "productId": 17,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 14,
+          "price": 860
+        },
+        {
+          "productId": 18,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 5,
+          "price": 421
+        },
+        {
+          "productId": 19,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 15,
+          "price": 1108
+        },
+        {
+          "productId": 20,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 11,
+          "price": 1094
+        },
+        {
+          "productId": 21,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 15,
+          "price": 1023
+        },
+        {
+          "productId": 22,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 7,
+          "price": 1220
+        },
+        {
+          "productId": 23,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 10,
+          "price": 862
+        },
+        {
+          "productId": 24,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 5,
+          "price": 497
+        },
+        {
+          "productId": 25,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 5,
+          "price": 1023
+        },
+        {
+          "productId": 26,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 15,
+          "price": 944
+        },
+        {
+          "productId": 27,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 10,
+          "price": 1252
+        },
+        {
+          "productId": 28,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 15,
+          "price": 1189
+        },
+        {
+          "productId": 29,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 8,
+          "price": 1311
+        },
+        {
+          "productId": 30,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 6,
+          "price": 1453
+        }
+      ]
+    },
+    {
+      "shopId": 2,
+      "shopName": "Mobile Shop 2",
+      "products": [
+        {
+          "productId": 31,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 8,
+          "price": 1157
+        },
+        {
+          "productId": 32,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 12,
+          "price": 899
+        },
+        {
+          "productId": 33,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 8,
+          "price": 614
+        },
+        {
+          "productId": 34,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 12,
+          "price": 858
+        },
+        {
+          "productId": 35,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 9,
+          "price": 583
+        },
+        {
+          "productId": 36,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 6,
+          "price": 588
+        },
+        {
+          "productId": 37,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 13,
+          "price": 1329
+        },
+        {
+          "productId": 38,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 10,
+          "price": 1144
+        },
+        {
+          "productId": 39,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 11,
+          "price": 520
+        },
+        {
+          "productId": 40,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 12,
+          "price": 710
+        },
+        {
+          "productId": 41,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 11,
+          "price": 443
+        },
+        {
+          "productId": 42,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 7,
+          "price": 1269
+        },
+        {
+          "productId": 43,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 7,
+          "price": 948
+        },
+        {
+          "productId": 44,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 11,
+          "price": 601
+        },
+        {
+          "productId": 45,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 7,
+          "price": 1213
+        },
+        {
+          "productId": 46,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 13,
+          "price": 1019
+        },
+        {
+          "productId": 47,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 5,
+          "price": 1444
+        },
+        {
+          "productId": 48,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 6,
+          "price": 636
+        },
+        {
+          "productId": 49,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 13,
+          "price": 489
+        },
+        {
+          "productId": 50,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 15,
+          "price": 773
+        },
+        {
+          "productId": 51,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 11,
+          "price": 1115
+        },
+        {
+          "productId": 52,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 7,
+          "price": 962
+        },
+        {
+          "productId": 53,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 6,
+          "price": 904
+        },
+        {
+          "productId": 54,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 9,
+          "price": 1071
+        },
+        {
+          "productId": 55,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 9,
+          "price": 859
+        },
+        {
+          "productId": 56,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 8,
+          "price": 1059
+        },
+        {
+          "productId": 57,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 12,
+          "price": 1428
+        },
+        {
+          "productId": 58,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 12,
+          "price": 717
+        },
+        {
+          "productId": 59,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 14,
+          "price": 1367
+        },
+        {
+          "productId": 60,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 7,
+          "price": 1137
+        }
+      ]
+    },
+    {
+      "shopId": 3,
+      "shopName": "Mobile Shop 3",
+      "products": [
+        {
+          "productId": 61,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 8,
+          "price": 1327
+        },
+        {
+          "productId": 62,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 9,
+          "price": 1468
+        },
+        {
+          "productId": 63,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 5,
+          "price": 1140
+        },
+        {
+          "productId": 64,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 5,
+          "price": 1370
+        },
+        {
+          "productId": 65,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 15,
+          "price": 448
+        },
+        {
+          "productId": 66,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 7,
+          "price": 1070
+        },
+        {
+          "productId": 67,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 9,
+          "price": 1167
+        },
+        {
+          "productId": 68,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 8,
+          "price": 1014
+        },
+        {
+          "productId": 69,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 14,
+          "price": 1030
+        },
+        {
+          "productId": 70,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 5,
+          "price": 1298
+        },
+        {
+          "productId": 71,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 14,
+          "price": 494
+        },
+        {
+          "productId": 72,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 6,
+          "price": 929
+        },
+        {
+          "productId": 73,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 6,
+          "price": 573
+        },
+        {
+          "productId": 74,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 12,
+          "price": 1007
+        },
+        {
+          "productId": 75,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 7,
+          "price": 1382
+        },
+        {
+          "productId": 76,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 10,
+          "price": 574
+        },
+        {
+          "productId": 77,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 10,
+          "price": 1167
+        },
+        {
+          "productId": 78,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 9,
+          "price": 848
+        },
+        {
+          "productId": 79,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 10,
+          "price": 492
+        },
+        {
+          "productId": 80,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 11,
+          "price": 753
+        },
+        {
+          "productId": 81,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 15,
+          "price": 765
+        },
+        {
+          "productId": 82,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 13,
+          "price": 1221
+        },
+        {
+          "productId": 83,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 7,
+          "price": 884
+        },
+        {
+          "productId": 84,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 9,
+          "price": 1417
+        },
+        {
+          "productId": 85,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 7,
+          "price": 615
+        },
+        {
+          "productId": 86,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 5,
+          "price": 531
+        },
+        {
+          "productId": 87,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 12,
+          "price": 679
+        },
+        {
+          "productId": 88,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 5,
+          "price": 859
+        },
+        {
+          "productId": 89,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 10,
+          "price": 1020
+        },
+        {
+          "productId": 90,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 15,
+          "price": 402
+        }
+      ]
+    },
+    {
+      "shopId": 4,
+      "shopName": "Mobile Shop 4",
+      "products": [
+        {
+          "productId": 91,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 12,
+          "price": 1333
+        },
+        {
+          "productId": 92,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 14,
+          "price": 1481
+        },
+        {
+          "productId": 93,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 15,
+          "price": 621
+        },
+        {
+          "productId": 94,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 5,
+          "price": 1051
+        },
+        {
+          "productId": 95,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 11,
+          "price": 419
+        },
+        {
+          "productId": 96,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 8,
+          "price": 761
+        },
+        {
+          "productId": 97,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 11,
+          "price": 545
+        },
+        {
+          "productId": 98,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 6,
+          "price": 1028
+        },
+        {
+          "productId": 99,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 14,
+          "price": 1430
+        },
+        {
+          "productId": 100,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 8,
+          "price": 653
+        },
+        {
+          "productId": 101,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 13,
+          "price": 605
+        },
+        {
+          "productId": 102,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 8,
+          "price": 521
+        },
+        {
+          "productId": 103,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 5,
+          "price": 756
+        },
+        {
+          "productId": 104,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 15,
+          "price": 1482
+        },
+        {
+          "productId": 105,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 12,
+          "price": 601
+        },
+        {
+          "productId": 106,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 9,
+          "price": 1200
+        },
+        {
+          "productId": 107,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 13,
+          "price": 1094
+        },
+        {
+          "productId": 108,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 14,
+          "price": 415
+        },
+        {
+          "productId": 109,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 5,
+          "price": 843
+        },
+        {
+          "productId": 110,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 12,
+          "price": 1068
+        },
+        {
+          "productId": 111,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 6,
+          "price": 829
+        },
+        {
+          "productId": 112,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 8,
+          "price": 1164
+        },
+        {
+          "productId": 113,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 10,
+          "price": 821
+        },
+        {
+          "productId": 114,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 5,
+          "price": 1362
+        },
+        {
+          "productId": 115,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 8,
+          "price": 1076
+        },
+        {
+          "productId": 116,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 10,
+          "price": 1213
+        },
+        {
+          "productId": 117,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 6,
+          "price": 464
+        },
+        {
+          "productId": 118,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 10,
+          "price": 697
+        },
+        {
+          "productId": 119,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 13,
+          "price": 456
+        },
+        {
+          "productId": 120,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 12,
+          "price": 553
+        }
+      ]
+    },
+    {
+      "shopId": 5,
+      "shopName": "Mobile Shop 5",
+      "products": [
+        {
+          "productId": 121,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 13,
+          "price": 1324
+        },
+        {
+          "productId": 122,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 8,
+          "price": 660
+        },
+        {
+          "productId": 123,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 13,
+          "price": 961
+        },
+        {
+          "productId": 124,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 5,
+          "price": 1355
+        },
+        {
+          "productId": 125,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 12,
+          "price": 478
+        },
+        {
+          "productId": 126,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 9,
+          "price": 852
+        },
+        {
+          "productId": 127,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 11,
+          "price": 457
+        },
+        {
+          "productId": 128,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 10,
+          "price": 1162
+        },
+        {
+          "productId": 129,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 9,
+          "price": 1479
+        },
+        {
+          "productId": 130,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 8,
+          "price": 1029
+        },
+        {
+          "productId": 131,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 7,
+          "price": 623
+        },
+        {
+          "productId": 132,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 12,
+          "price": 665
+        },
+        {
+          "productId": 133,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 8,
+          "price": 1467
+        },
+        {
+          "productId": 134,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 5,
+          "price": 505
+        },
+        {
+          "productId": 135,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 7,
+          "price": 959
+        },
+        {
+          "productId": 136,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 10,
+          "price": 1232
+        },
+        {
+          "productId": 137,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 7,
+          "price": 1117
+        },
+        {
+          "productId": 138,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 14,
+          "price": 1394
+        },
+        {
+          "productId": 139,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 13,
+          "price": 630
+        },
+        {
+          "productId": 140,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 15,
+          "price": 875
+        },
+        {
+          "productId": 141,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 5,
+          "price": 895
+        },
+        {
+          "productId": 142,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 10,
+          "price": 1425
+        },
+        {
+          "productId": 143,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 12,
+          "price": 1153
+        },
+        {
+          "productId": 144,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 13,
+          "price": 630
+        },
+        {
+          "productId": 145,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 5,
+          "price": 663
+        },
+        {
+          "productId": 146,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 9,
+          "price": 969
+        },
+        {
+          "productId": 147,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 8,
+          "price": 834
+        },
+        {
+          "productId": 148,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 5,
+          "price": 1354
+        },
+        {
+          "productId": 149,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 9,
+          "price": 913
+        },
+        {
+          "productId": 150,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 5,
+          "price": 624
+        }
+      ]
+    },
+    {
+      "shopId": 6,
+      "shopName": "Mobile Shop 6",
+      "products": [
+        {
+          "productId": 151,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 5,
+          "price": 1181
+        },
+        {
+          "productId": 152,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 12,
+          "price": 1376
+        },
+        {
+          "productId": 153,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 13,
+          "price": 1308
+        },
+        {
+          "productId": 154,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 12,
+          "price": 1453
+        },
+        {
+          "productId": 155,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 9,
+          "price": 419
+        },
+        {
+          "productId": 156,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 6,
+          "price": 479
+        },
+        {
+          "productId": 157,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 9,
+          "price": 840
+        },
+        {
+          "productId": 158,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 13,
+          "price": 1193
+        },
+        {
+          "productId": 159,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 9,
+          "price": 837
+        },
+        {
+          "productId": 160,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 7,
+          "price": 1112
+        },
+        {
+          "productId": 161,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 9,
+          "price": 805
+        },
+        {
+          "productId": 162,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 15,
+          "price": 1405
+        },
+        {
+          "productId": 163,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 15,
+          "price": 465
+        },
+        {
+          "productId": 164,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 12,
+          "price": 510
+        },
+        {
+          "productId": 165,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 5,
+          "price": 968
+        },
+        {
+          "productId": 166,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 11,
+          "price": 1371
+        },
+        {
+          "productId": 167,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 11,
+          "price": 560
+        },
+        {
+          "productId": 168,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 10,
+          "price": 425
+        },
+        {
+          "productId": 169,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 11,
+          "price": 414
+        },
+        {
+          "productId": 170,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 6,
+          "price": 1341
+        },
+        {
+          "productId": 171,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 12,
+          "price": 1109
+        },
+        {
+          "productId": 172,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 15,
+          "price": 1415
+        },
+        {
+          "productId": 173,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 14,
+          "price": 1371
+        },
+        {
+          "productId": 174,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 14,
+          "price": 1210
+        },
+        {
+          "productId": 175,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 15,
+          "price": 1445
+        },
+        {
+          "productId": 176,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 5,
+          "price": 1096
+        },
+        {
+          "productId": 177,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 9,
+          "price": 698
+        },
+        {
+          "productId": 178,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 5,
+          "price": 425
+        },
+        {
+          "productId": 179,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 11,
+          "price": 693
+        },
+        {
+          "productId": 180,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 10,
+          "price": 535
+        }
+      ]
+    },
+    {
+      "shopId": 7,
+      "shopName": "Mobile Shop 7",
+      "products": [
+        {
+          "productId": 181,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 10,
+          "price": 475
+        },
+        {
+          "productId": 182,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 13,
+          "price": 658
+        },
+        {
+          "productId": 183,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 7,
+          "price": 728
+        },
+        {
+          "productId": 184,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 13,
+          "price": 473
+        },
+        {
+          "productId": 185,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 7,
+          "price": 521
+        },
+        {
+          "productId": 186,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 15,
+          "price": 734
+        },
+        {
+          "productId": 187,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 6,
+          "price": 1033
+        },
+        {
+          "productId": 188,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 5,
+          "price": 1119
+        },
+        {
+          "productId": 189,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 5,
+          "price": 761
+        },
+        {
+          "productId": 190,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 11,
+          "price": 1278
+        },
+        {
+          "productId": 191,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 11,
+          "price": 1106
+        },
+        {
+          "productId": 192,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 9,
+          "price": 640
+        },
+        {
+          "productId": 193,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 10,
+          "price": 899
+        },
+        {
+          "productId": 194,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 5,
+          "price": 1181
+        },
+        {
+          "productId": 195,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 6,
+          "price": 767
+        },
+        {
+          "productId": 196,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 5,
+          "price": 1154
+        },
+        {
+          "productId": 197,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 12,
+          "price": 1261
+        },
+        {
+          "productId": 198,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 10,
+          "price": 1496
+        },
+        {
+          "productId": 199,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 11,
+          "price": 1463
+        },
+        {
+          "productId": 200,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 6,
+          "price": 1481
+        },
+        {
+          "productId": 201,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 9,
+          "price": 1486
+        },
+        {
+          "productId": 202,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 10,
+          "price": 1260
+        },
+        {
+          "productId": 203,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 8,
+          "price": 431
+        },
+        {
+          "productId": 204,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 10,
+          "price": 1337
+        },
+        {
+          "productId": 205,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 15,
+          "price": 465
+        },
+        {
+          "productId": 206,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 14,
+          "price": 1164
+        },
+        {
+          "productId": 207,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 5,
+          "price": 932
+        },
+        {
+          "productId": 208,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 9,
+          "price": 982
+        },
+        {
+          "productId": 209,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 6,
+          "price": 1045
+        },
+        {
+          "productId": 210,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 5,
+          "price": 715
+        }
+      ]
+    },
+    {
+      "shopId": 8,
+      "shopName": "Mobile Shop 8",
+      "products": [
+        {
+          "productId": 211,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 6,
+          "price": 1036
+        },
+        {
+          "productId": 212,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 8,
+          "price": 1284
+        },
+        {
+          "productId": 213,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 10,
+          "price": 1069
+        },
+        {
+          "productId": 214,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 5,
+          "price": 1494
+        },
+        {
+          "productId": 215,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 15,
+          "price": 1038
+        },
+        {
+          "productId": 216,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 15,
+          "price": 1478
+        },
+        {
+          "productId": 217,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 15,
+          "price": 883
+        },
+        {
+          "productId": 218,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 7,
+          "price": 447
+        },
+        {
+          "productId": 219,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 5,
+          "price": 410
+        },
+        {
+          "productId": 220,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 5,
+          "price": 677
+        },
+        {
+          "productId": 221,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 9,
+          "price": 1279
+        },
+        {
+          "productId": 222,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 8,
+          "price": 1283
+        },
+        {
+          "productId": 223,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 11,
+          "price": 1108
+        },
+        {
+          "productId": 224,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 6,
+          "price": 871
+        },
+        {
+          "productId": 225,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 8,
+          "price": 1053
+        },
+        {
+          "productId": 226,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 5,
+          "price": 869
+        },
+        {
+          "productId": 227,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 14,
+          "price": 972
+        },
+        {
+          "productId": 228,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 15,
+          "price": 589
+        },
+        {
+          "productId": 229,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 11,
+          "price": 1398
+        },
+        {
+          "productId": 230,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 15,
+          "price": 553
+        },
+        {
+          "productId": 231,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 10,
+          "price": 1237
+        },
+        {
+          "productId": 232,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 14,
+          "price": 1449
+        },
+        {
+          "productId": 233,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 13,
+          "price": 859
+        },
+        {
+          "productId": 234,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 8,
+          "price": 533
+        },
+        {
+          "productId": 235,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 11,
+          "price": 546
+        },
+        {
+          "productId": 236,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 14,
+          "price": 1134
+        },
+        {
+          "productId": 237,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 6,
+          "price": 704
+        },
+        {
+          "productId": 238,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 9,
+          "price": 1281
+        },
+        {
+          "productId": 239,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 13,
+          "price": 821
+        },
+        {
+          "productId": 240,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 9,
+          "price": 837
+        }
+      ]
+    },
+    {
+      "shopId": 9,
+      "shopName": "Mobile Shop 9",
+      "products": [
+        {
+          "productId": 241,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 8,
+          "price": 1200
+        },
+        {
+          "productId": 242,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 11,
+          "price": 1432
+        },
+        {
+          "productId": 243,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 12,
+          "price": 1274
+        },
+        {
+          "productId": 244,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 9,
+          "price": 1358
+        },
+        {
+          "productId": 245,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 15,
+          "price": 901
+        },
+        {
+          "productId": 246,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 10,
+          "price": 631
+        },
+        {
+          "productId": 247,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 10,
+          "price": 1411
+        },
+        {
+          "productId": 248,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 11,
+          "price": 787
+        },
+        {
+          "productId": 249,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 14,
+          "price": 771
+        },
+        {
+          "productId": 250,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 13,
+          "price": 1056
+        },
+        {
+          "productId": 251,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 11,
+          "price": 1435
+        },
+        {
+          "productId": 252,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 6,
+          "price": 791
+        },
+        {
+          "productId": 253,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 15,
+          "price": 1358
+        },
+        {
+          "productId": 254,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 13,
+          "price": 750
+        },
+        {
+          "productId": 255,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 15,
+          "price": 680
+        },
+        {
+          "productId": 256,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 13,
+          "price": 560
+        },
+        {
+          "productId": 257,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 15,
+          "price": 1264
+        },
+        {
+          "productId": 258,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 8,
+          "price": 558
+        },
+        {
+          "productId": 259,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 10,
+          "price": 675
+        },
+        {
+          "productId": 260,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 12,
+          "price": 1167
+        },
+        {
+          "productId": 261,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 6,
+          "price": 950
+        },
+        {
+          "productId": 262,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 5,
+          "price": 1040
+        },
+        {
+          "productId": 263,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 7,
+          "price": 1483
+        },
+        {
+          "productId": 264,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 15,
+          "price": 650
+        },
+        {
+          "productId": 265,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 9,
+          "price": 1236
+        },
+        {
+          "productId": 266,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 7,
+          "price": 1118
+        },
+        {
+          "productId": 267,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 12,
+          "price": 1286
+        },
+        {
+          "productId": 268,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 13,
+          "price": 772
+        },
+        {
+          "productId": 269,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 15,
+          "price": 510
+        },
+        {
+          "productId": 270,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 5,
+          "price": 500
+        }
+      ]
+    },
+    {
+      "shopId": 10,
+      "shopName": "Mobile Shop 10",
+      "products": [
+        {
+          "productId": 271,
+          "company": "Apple",
+          "model": "iPhone 11",
+          "quantity": 12,
+          "price": 1333
+        },
+        {
+          "productId": 272,
+          "company": "Apple",
+          "model": "iPhone 12",
+          "quantity": 6,
+          "price": 1326
+        },
+        {
+          "productId": 273,
+          "company": "Apple",
+          "model": "iPhone 13",
+          "quantity": 14,
+          "price": 874
+        },
+        {
+          "productId": 274,
+          "company": "Apple",
+          "model": "iPhone 14",
+          "quantity": 10,
+          "price": 594
+        },
+        {
+          "productId": 275,
+          "company": "Apple",
+          "model": "iPhone 15",
+          "quantity": 14,
+          "price": 1332
+        },
+        {
+          "productId": 276,
+          "company": "Samsung",
+          "model": "Galaxy S21",
+          "quantity": 10,
+          "price": 1300
+        },
+        {
+          "productId": 277,
+          "company": "Samsung",
+          "model": "Galaxy S22",
+          "quantity": 12,
+          "price": 1363
+        },
+        {
+          "productId": 278,
+          "company": "Samsung",
+          "model": "Galaxy S23",
+          "quantity": 13,
+          "price": 420
+        },
+        {
+          "productId": 279,
+          "company": "Samsung",
+          "model": "Galaxy Z Flip 4",
+          "quantity": 12,
+          "price": 596
+        },
+        {
+          "productId": 280,
+          "company": "Samsung",
+          "model": "Galaxy A53",
+          "quantity": 5,
+          "price": 1187
+        },
+        {
+          "productId": 281,
+          "company": "Google",
+          "model": "Pixel 6",
+          "quantity": 7,
+          "price": 906
+        },
+        {
+          "productId": 282,
+          "company": "Google",
+          "model": "Pixel 6 Pro",
+          "quantity": 5,
+          "price": 728
+        },
+        {
+          "productId": 283,
+          "company": "Google",
+          "model": "Pixel 7",
+          "quantity": 13,
+          "price": 933
+        },
+        {
+          "productId": 284,
+          "company": "Google",
+          "model": "Pixel 7 Pro",
+          "quantity": 10,
+          "price": 1331
+        },
+        {
+          "productId": 285,
+          "company": "Google",
+          "model": "Pixel 8",
+          "quantity": 14,
+          "price": 644
+        },
+        {
+          "productId": 286,
+          "company": "Nothing",
+          "model": "Phone (1)",
+          "quantity": 12,
+          "price": 1073
+        },
+        {
+          "productId": 287,
+          "company": "Nothing",
+          "model": "Phone (2)",
+          "quantity": 8,
+          "price": 1194
+        },
+        {
+          "productId": 288,
+          "company": "Nothing",
+          "model": "Phone (2a)",
+          "quantity": 8,
+          "price": 1468
+        },
+        {
+          "productId": 289,
+          "company": "Nothing",
+          "model": "Phone Pro",
+          "quantity": 10,
+          "price": 843
+        },
+        {
+          "productId": 290,
+          "company": "Nothing",
+          "model": "Phone Max",
+          "quantity": 9,
+          "price": 910
+        },
+        {
+          "productId": 291,
+          "company": "Oppo",
+          "model": "Find X3",
+          "quantity": 5,
+          "price": 1457
+        },
+        {
+          "productId": 292,
+          "company": "Oppo",
+          "model": "Find X5",
+          "quantity": 15,
+          "price": 950
+        },
+        {
+          "productId": 293,
+          "company": "Oppo",
+          "model": "Reno 6",
+          "quantity": 10,
+          "price": 512
+        },
+        {
+          "productId": 294,
+          "company": "Oppo",
+          "model": "Reno 7",
+          "quantity": 11,
+          "price": 735
+        },
+        {
+          "productId": 295,
+          "company": "Oppo",
+          "model": "A96",
+          "quantity": 5,
+          "price": 959
+        },
+        {
+          "productId": 296,
+          "company": "Vivo",
+          "model": "X60",
+          "quantity": 6,
+          "price": 442
+        },
+        {
+          "productId": 297,
+          "company": "Vivo",
+          "model": "X70",
+          "quantity": 13,
+          "price": 822
+        },
+        {
+          "productId": 298,
+          "company": "Vivo",
+          "model": "X80",
+          "quantity": 13,
+          "price": 710
+        },
+        {
+          "productId": 299,
+          "company": "Vivo",
+          "model": "V21",
+          "quantity": 7,
+          "price": 900
+        },
+        {
+          "productId": 300,
+          "company": "Vivo",
+          "model": "V23",
+          "quantity": 6,
+          "price": 1281
+        }
+      ]
+    }
+  ]
+}
